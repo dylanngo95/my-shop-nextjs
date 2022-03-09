@@ -1,10 +1,7 @@
-import https from 'https'
 import { ApolloClient, InMemoryCache } from '@apollo/client'
 
-const httpsAgent = new https.Agent({ rejectUnauthorized: false })
-
 const client = new ApolloClient({
-    uri: "http://pim.local/graphql",
+    uri: process.env.PUBLIC_GRAPHQL_ENDPOINT,
     cache: new InMemoryCache(),
 });
 

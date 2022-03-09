@@ -1,5 +1,5 @@
 import { gql } from '@apollo/client'
-import client from '../lib/apollo-cilent'
+import client from '@framework/graphql/apollo-cilent'
 
 type PageProps = {
     base_currency_code: string
